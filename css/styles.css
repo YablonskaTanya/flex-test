@@ -1,0 +1,114 @@
+/* 
+        <div class="box"></div>
+
+.box {
+    /* Встановить стилі верхньої рамки */
+    /* border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: blue; */
+
+    /* Встановить стилі правої рамки */
+    /* border-right-width: 5px;
+    border-right-style: dotted;
+    border-right-color: black; */
+
+    /* Встановить стилі нижньої рамки */
+    /* border-bottom-width: 7px;
+    border-bottom-style: dashed;
+    border-bottom-color: palevioletred; */
+
+    /* Встановить стилі лівої рамки */
+    /* border-left-width: 9px;
+    border-left-style: dashed;
+    border-left-color: green;
+    
+    border-top-left-radius: 10%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 30%; */
+/* }
+.box{
+    font-weight: 900;
+    font-size: larger;
+    width: 400px;
+    height: 400px;
+} */ 
+
+:root{
+--page-bg-color: #f9f9fd;
+--primary-text-covor: #212121;
+--card-set-grap: 20px;
+--card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)
+}
+
+
+
+body{
+    background-color: #f9f9fd;
+    color: var(--primary-text-covor);
+    line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* container */
+
+.container{
+    width: 960px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #ccc; */
+}
+
+/* card-set */
+
+.card-set{
+    /* outline: 1px  solid tomato; */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc( -1 * var(--card-set-grap));
+    margin-left: calc( -1 * var(--card-set-grap));
+}
+
+
+
+.card-set > .iteam{
+/* outline: 1px solid teal; */
+
+flex-basis: calc(100% / 3 - var(--card-set-grap));
+margin-left: var(--card-set-grap);
+margin-top: var(--card-set-grap);
+}
+/* .card-thumb{
+outline: solid red;
+} */
+
+.iteam *{
+    /* outline: 1px solid tomato; */
+}
+.card{
+    box-shadow: var(--card-shadow);
+    border-radius: 4px;
+    overflow:hidden ;
+}
+.csrd-heading{
+    /* margin-top: 10px; */
+}
+.card-text{
+    margin-top: 10px;
+}
+.card-content{
+    padding: 10px;
+}
